@@ -64,8 +64,9 @@ foreach($ga->getResults() as $result)
 
 GAPI (because now Google Analytics API only supports OAuth2) will require you to create a 'service account' and then download a .P12 file to upload to your application.
 
-  1. Create a [Google Developers project](https://console.developers.google.com/project)
-  2. Create service account under this project, [see instructions](https://developers.google.com/identity/protocols/OAuth2ServiceAccount#creatinganaccount)
-  3. Download the .p12 file for this service account, upload to the same folder as **gapi.class.php**
-  4. Enable 'analytics API' in the [Google Developers console]((https://console.developers.google.com/project))
-  5. In Google Analytics *Administration > User Management*, give the service account 'Read and Analyse' permissions on the analytics accounts you want to access
+  1. Be sure that your server time/date is up to date `sudo ntpdate -s time.nist.gov`
+  2. Create a [Google Developers project](https://console.developers.google.com/project)
+  3. Create service account under this project, [see instructions](https://developers.google.com/identity/protocols/OAuth2ServiceAccount#creatinganaccount)
+  4. Download the .p12 file for this service account, upload to the same folder as **gapi.class.php**
+  5. Enable 'analytics API' in the [Google Developers console]((https://console.developers.google.com/project))
+  6. In Google Analytics *Administration > User Management*, give the service account 'Read and Analyse' permissions on the analytics accounts you want to access
